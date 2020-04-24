@@ -1,3 +1,4 @@
+[回到目录](../README.md)  
 LVS BOX的使用对于后端的团队协作起到非常便利的作用。  
 通过在lvs rules file添加BOX的相关语句可以达到这个目的，但也可以通过配置LVS Options等来更加灵活的使用。  
 依照不同的实际情况，主要有下面三种对应的数据匹配方法。  
@@ -13,10 +14,12 @@ LVS BOX的使用对于后端的团队协作起到非常便利的作用。
 勾选Calibre LVS中的LVS Options选项。  
  ![](https://upload-images.jianshu.io/upload_images/1319303-0121322857b19a11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-然后在LVS Options→include中勾选Include Rule Statements，并输入：
+然后在LVS Options→include中勾选Include Rule Statements，并输入：  
+
 ```
 LVS BOX inv
-```  
+```
+
  ![](https://upload-images.jianshu.io/upload_images/1319303-49955d7f9b33e9f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 Run LVS结果会有BOX单元提示。  
@@ -43,14 +46,17 @@ Run LVS结果会有BOX单元提示。
 同一个inv可能由于版图的形状不同等原因存在不同名的单元，假设电路```inv```，版图有```inv_box```和```inv_ip```。  
 
 在上一种情况的基础上修改hcell文件。  
+
 ```
 inv_box inv
 inv_ip inv
-```  
+```
+
 ![](https://upload-images.jianshu.io/upload_images/1319303-45f66fee4bb13a74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 修改LVS Options→include→Include Rule Statements信息。  
 ![](https://upload-images.jianshu.io/upload_images/1319303-86002f9d0566f078.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
-最后Run LVS。
+最后Run LVS。  
 
+[回到目录](../README.md)  
