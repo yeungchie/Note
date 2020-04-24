@@ -1,4 +1,4 @@
-[回到目录](../README.md)  
+[回到目录](./README.md)  
 
 LVS BOX的使用对于后端的团队协作起到非常便利的作用。  
 通过在lvs rules file添加BOX的相关语句可以达到这个目的，但也可以通过配置LVS Options等来更加灵活的使用。  
@@ -60,4 +60,4 @@ inv_ip inv
 
 最后Run LVS。  
 
-[回到目录](../README.md)  
+[回到目录](./README.md)  
